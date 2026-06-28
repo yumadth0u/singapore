@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Singapore Family Holiday — July 27 to August 6, 2026</title>
+  <style>
+    :root {
+      --navy:#1A3558; --navy-light:#EAF0F8;
+      --teal:#00796B; --teal-light:#E0F2F1;
+      --coral:#FF6F61; --coral-light:#FFF0EE;
+      --gold:#C49A22; --gold-light:#FFF9E6;
+      --green:#388E3C; --green-light:#F1F8E9;
+      --purple:#7B1FA2; --purple-light:#F3E5F5;
+      --red:#C62828; --red-light:#FFEBEE;
+      --gray:#5F6368; --border:#E0E0E0;
+      --shadow:0 2px 12px rgba(0,0,0,0.08);
+      --cream:#FDF8F2;
+    }
+    *{box-sizing:border-box;margin:0;padding:0;}
+    body{font-family:'Georgia',serif;background:var(--cream);color:#2C2C2C;line-height:1.7;}
+
+    /* HEADER */
+    header{background:linear-gradient(135deg,var(--navy) 0%,#2A5298 100%);color:#fff;padding:40px 24px 32px;text-align:center;}
+    header .flag{font-size:2rem;margin-bottom:6px;}
+    header h1{font-size:1.8rem;font-weight:normal;letter-spacing:1px;margin-bottom:4px;}
+    header h2{font-size:1rem;font-weight:normal;opacity:.85;margin-bottom:16px;}
+    .hchips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;}
+    .hchip{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:3px 12px;font-size:.78rem;font-family:sans-serif;}
+
+    /* TAB BAR */
+    .tab-bar{position:sticky;top:0;z-index:100;background:#fff;border-bottom:2px solid var(--border);overflow-x:auto;-webkit-overflow-scrolling:touch;overflow-y:visible;scrollbar-width:none;box-shadow:0 2px 8px rgba(0,0,0,.07);}
+    .tab-bar::-webkit-scrollbar{display:none;}
+    .tab-inner{display:flex;padding:0 8px;}
+    @media(min-width:900px){.tab-inner{justify-content:center;}}
+    .tab-btn{flex-shrink:0;display:flex;flex-direction:column;align-items:center;padding:10px 14px;border:none;background:none;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:border-color .18s;min-width:72px;touch-action:manipulation;-webkit-tap-highlight-color:rgba(0,0,0,0);user-select:none;-webkit-user-select:none;}
+    .tab-btn .tl{font-family:sans-serif;font-size:.82rem;font-weight:600;color:var(--gray);white-space:nowrap;}
+    .tab-btn .ts{font-family:sans-serif;font-size:.7rem;color:#aaa;white-space:nowrap;}
+    .tab-btn:hover .tl{color:var(--navy);}
+    .tab-btn.active{border-bottom-color:var(--navy);}
+    .tab-btn.active .tl{color:var(--navy);}
+    .tab-btn.active .ts{color:var(--teal);}
+
+    /* PANELS */
+    .tab-panel{display:none;}
+    .tab-panel.active{display:block;}
+
+    /* MAIN */
+    main{max-width:940px;margin:0 auto;padding:28px 18px 60px;}
+
+    /* INFO CARDS */
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:28px;}
+    .icard{background:#fff;border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);border-left:4px solid var(--teal);}
+    .icard .lbl{font-family:sans-serif;font-size:.7rem;text-transform:uppercase;letter-spacing:.08em;color:var(--gray);margin-bottom:3px;}
+    .icard .val{font-size:.95rem;font-weight:700;color:var(--navy);}
+    .icard .sub{font-size:.78rem;color:var(--gray);font-family:sans-serif;}
+
+    /* SECTION TITLES */
+    .stitle{font-size:1.2rem;color:var(--navy);border-bottom:2px solid var(--border);padding-bottom:7px;margin:32px 0 16px;}
+
+    /* ALERT BOXES */
+    .abox{border-radius:10px;padding:14px 18px;font-family:sans-serif;font-size:.86rem;margin-bottom:18px;}
+    .abox p{margin-bottom:6px;}
+    .abox p:last-child{margin-bottom:0;}
+    .abox h3{font-size:.92rem;margin-bottom:8px;}
+    .abox-yellow{background:#FFF8E1;border:1px solid #FFE082;}
+    .abox-yellow h3{color:#F57F17;}
+    .abox-red{background:#FBE9E7;border:1px solid #FFAB91;}
+    .abox-red h3{color:#BF360C;}
+    .abox-blue{background:var(--navy-light);border:1px solid #C5D8EE;}
+    .abox-blue h3{color:var(--navy);}
+    .abox-green{background:var(--green-light);border:1px solid #C8E6C9;}
+    .abox-green h3{color:var(--green);}
+    .abox-gold{background:var(--gold-light);border:1px solid #F0DFA0;}
+    .abox-gold h3{color:#7B6000;}
+    .abox-purple{background:var(--purple-light);border:1px solid #CE93D8;}
+    .abox-purple h3{color:var(--purple);}
+    .abox-navy{background:#EEF2F8;border:1px solid #B3CCE8;}
+
+    /* TIPS LIST */
+    .tlist{list-style:none;}
+    .tlist li{font-family:sans-serif;font-size:.86rem;padding:4px 0 4px 20px;position:relative;}
+    .tlist li::before{content:'→';position:absolute;left:0;color:var(--navy);}
+
+    /* TRANSPORT GRID */
+    .tgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px;margin-bottom:16px;}
+    .tcard{background:#fff;border-radius:12px;padding:16px 18px;box-shadow:var(--shadow);border-top:3px solid var(--teal);}
+    .tcard h4{font-family:sans-serif;font-size:.88rem;color:var(--navy);margin-bottom:8px;}
+    .tcard ul{list-style:none;padding:0;}
+    .tcard ul li{font-family:sans-serif;font-size:.82rem;color:#3C3C3C;padding:2px 0 2px 14px;position:relative;}
+    .tcard ul li::before{content:'•';position:absolute;left:0;color:var(--teal);}
+
+    /* TABLES */
+    .rtable{width:100%;border-collapse:collapse;font-family:sans-serif;font-size:.85rem;}
+    .rtable th{background:var(--navy);color:#fff;padding:10px 12px;text-align:left;font-weight:600;}
+    .rtable td{padding:8px 12px;border-bottom:1px solid var(--border);}
+    .rtable tr:nth-child(even) td{background:#F9F9F9;}
+    .rtable tr:last-child td{border-bottom:none;}
+    .pb{color:#388E3C;font-weight:600;}
+    .pm{color:#F57C00;font-weight:600;}
+    .ps{color:var(--red);font-weight:600;}
+
+    /* DAY SUMMARY CARD */
+    .day-summary{border-radius:14px;padding:20px 22px;margin-bottom:24px;border:1px solid rgba(0,0,0,.07);box-shadow:var(--shadow);}
+    .ds-top{display:flex;align-items:flex-start;gap:14px;margin-bottom:12px;}
+    .ds-emoji{font-size:2.2rem;line-height:1;flex-shrink:0;}
+    .ds-date{font-family:sans-serif;font-size:.78rem;color:var(--gray);}
+    .ds-title{font-size:1.15rem;color:var(--navy);margin-bottom:2px;}
+    .ds-desc{font-family:sans-serif;font-size:.86rem;color:#444;line-height:1.55;margin-bottom:12px;}
+    .ds-chips{display:flex;gap:7px;flex-wrap:wrap;}
+    .dchip{font-family:sans-serif;font-size:.76rem;border-radius:20px;padding:3px 10px;background:#F0F0F0;color:#3C3C3C;}
+
+    /* DAY CARD / TIME BLOCKS */
+    .day-card{background:#fff;border-radius:12px;box-shadow:var(--shadow);margin-bottom:22px;overflow:hidden;}
+    .day-card-head{padding:14px 20px;border-bottom:1px solid var(--border);font-family:sans-serif;}
+    .day-card-head h3{font-size:.92rem;color:var(--navy);}
+    .day-body{padding:18px 20px;}
+
+    .tblock{margin-bottom:18px;}
+    .tlabel{font-family:sans-serif;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--coral);margin-bottom:5px;}
+    .tcontent{padding-left:12px;border-left:2px solid var(--coral-light);}
+    .tcontent p{font-family:sans-serif;font-size:.88rem;margin-bottom:3px;}
+    .aname{font-weight:700;color:#1A1A1A;}
+    .adetail{color:var(--gray);font-size:.83rem;}
+
+    /* MEAL ROW */
+    .meal{display:flex;gap:10px;align-items:flex-start;background:var(--gold-light);border:1px solid #F0DFA0;border-radius:8px;padding:10px 14px;margin-top:14px;}
+    .meal-ico{font-size:1.2rem;flex-shrink:0;}
+    .meal-body{font-family:sans-serif;font-size:.84rem;}
+    .meal-body strong{color:var(--navy);}
+    .pb2{color:var(--gold);font-weight:600;}
+
+    /* BADGES */
+    .badge{display:inline-block;font-family:sans-serif;font-size:.7rem;border-radius:10px;padding:2px 8px;margin-left:5px;vertical-align:middle;}
+    .b-pram{background:#E8F5E9;color:#2E7D32;}
+    .b-free{background:#E8EAF6;color:#3949AB;}
+    .b-book{background:#FCE4EC;color:#C62828;}
+    .b-beach{background:#E1F5FE;color:#0277BD;}
+    .b-chill{background:var(--purple-light);color:var(--purple);}
+
+    /* BOOKING LINK */
+    .blink{display:inline-block;background:#E8F5E9;color:#2E7D32;border:1px solid #A5D6A7;border-radius:6px;padding:3px 10px;font-size:.76rem;font-family:sans-serif;text-decoration:none;margin-top:5px;margin-right:5px;}
+    .blink:hover{background:#C8E6C9;}
+    .rlink{display:inline-block;background:#FFF3E0;color:#E65100;border:1px solid #FFCC80;border-radius:6px;padding:3px 10px;font-size:.76rem;font-family:sans-serif;text-decoration:none;margin-top:5px;margin-right:5px;}
+    .rlink:hover{background:#FFE0B2;}
+
+    /* DEPARTURE BOX */
+    .depbox{background:linear-gradient(135deg,#E8EAF6,#D6DAFA);border:1px solid #9FA8DA;border-radius:10px;padding:16px 20px;font-family:sans-serif;font-size:.87rem;}
+    .depbox p{margin-bottom:6px;}
+
+    /* ARRIVAL BOX */
+    .arrbox{background:linear-gradient(135deg,#EAF0F8,#D6E4F7);border:1px solid #B3CCE8;border-radius:10px;padding:14px 18px;font-family:sans-serif;font-size:.87rem;}
+    .arrbox p{margin-bottom:6px;}
+    .arrbox p:last-child{margin-bottom:0;}
+
+    /* POOL DAY BOX */
+    .poolbox{background:linear-gradient(135deg,#F3E5F5,#EDE7F6);border:1px solid #CE93D8;border-radius:10px;padding:18px 20px;font-family:sans-serif;font-size:.87rem;}
+    .poolbox p{margin-bottom:8px;}
+    .poolbox p:last-child{margin-bottom:0;}
+
+    footer{text-align:center;font-family:sans-serif;font-size:.78rem;color:var(--gray);padding:24px;border-top:1px solid var(--border);margin-top:40px;}
+
+    /* ── MOBILE RESPONSIVE ── */
+    @media(max-width:640px){
+      header{padding:20px 14px 18px;}
+      header .flag{font-size:1.5rem;}
+      header h1{font-size:1.2rem;letter-spacing:0;}
+      header h2{font-size:.78rem;margin-bottom:10px;}
+      .hchip{font-size:.68rem;padding:2px 8px;}
+
+      .tab-btn{padding:8px 10px;min-width:52px;}
+      .tab-btn .tl{font-size:.74rem;}
+      .tab-btn .ts{font-size:.6rem;}
+
+      main{padding:14px 11px 48px;}
+
+      .card-grid{grid-template-columns:1fr 1fr;gap:8px;margin-bottom:18px;}
+      .icard{padding:12px 13px;}
+      .icard .val{font-size:.85rem;}
+      .icard .sub{font-size:.72rem;}
+
+      .stitle{font-size:1rem;margin:22px 0 12px;}
+
+      .abox{padding:11px 13px;font-size:.8rem;}
+      .abox h3{font-size:.86rem;}
+      .tlist li{font-size:.8rem;}
+
+      .tgrid{grid-template-columns:1fr;}
+      .tcard{padding:13px 14px;}
+      .tcard h4{font-size:.84rem;}
+      .tcard ul li{font-size:.78rem;}
+
+      .day-summary{padding:14px 13px;}
+      .ds-top{gap:9px;}
+      .ds-emoji{font-size:1.7rem;}
+      .ds-title{font-size:.95rem;}
+      .ds-desc{font-size:.8rem;}
+      .dchip{font-size:.68rem;padding:2px 7px;}
+
+      .day-card-head{padding:11px 14px;}
+      .day-card-head h3{font-size:.84rem;}
+      .day-body{padding:13px 13px;}
+      .tlabel{font-size:.68rem;}
+      .tcontent p{font-family:sans-serif;font-size:.82rem;}
+
+      .meal{padding:8px 11px;}
+      .meal-body{font-size:.78rem;}
+
+      .poolbox,.arrbox,.depbox{padding:12px 13px;font-size:.8rem;}
+
+      .blink,.rlink{font-size:.68rem;padding:2px 7px;}
+
+      .rtable{font-size:.76rem;}
+      .rtable th,.rtable td{padding:6px 7px;}
+
+      /* stack spa cards */
+      .spa-grid{grid-template-columns:1fr !important;}
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="flag">🇸🇬 ✈️</div>
+  <h1>Singapore Family Holiday</h1>
+  <h2>27 July – 6 August 2026 &nbsp;·&nbsp; Conrad Singapore Marina Bay</h2>
+  <div class="hchips">
+    <span class="hchip">👶 4-month-old</span>
+    <span class="hchip">🧒 Age 5</span>
+    <span class="hchip">👦 Ages 7 &amp; 9</span>
+    <span class="hchip">🥩 Meat · 🐟 Pescatarian · 🥦 Vegetarian</span>
+    <span class="hchip">🛒 Pram-friendly</span>
+    <span class="hchip">🍳 Breakfast &amp; Lounge included</span>
+  </div>
+</header>
+
+<!-- ===== TAB BAR ===== -->
+<nav class="tab-bar" id="tabBar">
+  <div class="tab-inner">
+    <button class="tab-btn active" onclick="switchTab(this)" data-tab="overview"><span class="tl">Overview</span><span class="ts">Info &amp; Tips</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day1"><span class="tl">✈️ Arrive</span><span class="ts">28 Jul</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day2"><span class="tl">Day 2</span><span class="ts">Tue 29 Jul</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day3"><span class="tl">Day 3</span><span class="ts">Wed 30 Jul</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day4"><span class="tl">Day 4</span><span class="ts">Thu 31 Jul</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day5"><span class="tl">Day 5</span><span class="ts">Fri 1 Aug</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day6"><span class="tl">Day 6</span><span class="ts">Sat 2 Aug</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day7"><span class="tl">Day 7</span><span class="ts">Sun 3 Aug</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day8"><span class="tl">Day 8</span><span class="ts">Mon 4 Aug</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="day9"><span class="tl">Day 9</span><span class="ts">Tue 5 Aug</span></button>
+    <button class="tab-btn" onclick="switchTab(this)" data-tab="depart"><span class="tl">✈️ Depart</span><span class="ts">Wed 6 Aug</span></button>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============================================================ -->
+<!-- OVERVIEW PANEL -->
+<!-- ============================================================ -->
+<div id="overview" class="tab-panel active">
+
+  <div class="card-grid" style="margin-top:16px;">
+    <div class="icard"><div class="lbl">Outbound flight</div><div class="val">BA11 LHR → SIN</div><div class="sub">Departs ~21:30 BST 27 Jul · Arrives ~17:30 SGT 28 Jul</div></div>
+    <div class="icard"><div class="lbl">Return flight</div><div class="val">BA12 SIN → LHR</div><div class="sub">Departs 16:20 SGT 6 Aug · Leave hotel by 12:45pm</div></div>
+    <div class="icard"><div class="lbl">Hotel</div><div class="val">Conrad Singapore Marina Bay</div><div class="sub">Breakfast + Lounge access · 2-min walk to Promenade MRT</div></div>
+    <div class="icard"><div class="lbl">Currency &amp; Time</div><div class="val">SGD · BST + 7 hrs</div><div class="sub">£1 ≈ SGD 1.70 · Cards accepted almost everywhere</div></div>
+  </div>
+
+  <!-- WEATHER -->
+  <div class="abox abox-yellow">
+    <h3>☀️ Weather — July / August</h3>
+    <p>Hot and humid, 30–34°C with afternoon rain showers (usually 30–60 min, then bright again). Plan <strong>outdoor activities in the mornings</strong> and <strong>indoor/air-conditioned activities from 1–4pm</strong>. Always carry a compact umbrella. Bring a pop-up UV beach tent for the baby for any outdoor time.</p>
+  </div>
+
+  <!-- MOSQUITOES -->
+  <div class="abox abox-red">
+    <h3>🦟 Mosquitoes — Yes, They Are Present</h3>
+    <p>Singapore has Aedes mosquitoes, which can carry dengue. The government actively controls them, but they are a genuine presence in <strong>parks, gardens and the Mandai wildlife reserves</strong> — especially at dawn and dusk. City centre, hotel areas and malls have far fewer.</p>
+    <p><strong>For the baby (4 months):</strong> Use a <strong>pram mosquito net</strong> — essential for all park visits. Apply a <strong>picaridin/icaridin-based repellent</strong> (Autan Family or Mosi-guard Natural) to exposed skin — safer than DEET for infants. Never apply to hands or near eyes. Dress baby in light long sleeves and trousers in parks.</p>
+    <p><strong>For everyone else:</strong> Standard DEET (25–30%) or picaridin repellent, reapplied every few hours. Light-coloured clothing helps. Guardian and Watsons pharmacies across Singapore stock repellents if you forget to pack them.</p>
+    <p><strong>Most vigilant at:</strong> Gardens by the Bay, Mandai Zoo &amp; Bird Paradise, Botanic Gardens, Sentosa beach vegetation at dusk.</p>
+  </div>
+
+  <!-- TRANSPORT -->
+  <h2 class="stitle">🚌 Getting Around — Transport Guide</h2>
+  <div class="tgrid">
+    <div class="tcard">
+      <h4>🚇 MRT — Best for most city journeys</h4>
+      <ul>
+        <li>Conrad is 2-min walk from <strong>Promenade MRT</strong> (Circle &amp; Downtown Lines)</li>
+        <li>Every station has lifts — fully pram-accessible throughout</li>
+        <li>Clean, air-conditioned, every 2–5 minutes</li>
+        <li>Cost: ~SGD 1–3 adult. <strong>Under-7s ride completely free.</strong> Buy <strong>EZ-Link cards</strong> at Changi Airport Arrival Hall on landing</li>
+        <li>Best for: Gardens by the Bay, Orchard Road, Chinatown, Little India, Botanic Gardens, Jewel Changi, Sentosa Express</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h4>🚗 Grab — For destinations not on the MRT</h4>
+      <ul>
+        <li>Download the <strong>Grab app</strong> before you fly. Works like Uber</li>
+        <li>Book <strong>GrabCar Plus (6-seater)</strong> to fit both families in one vehicle</li>
+        <li><strong>Baby car seat:</strong> Select <strong>GrabFamily</strong> — this option includes one fitted infant/toddler car seat. Always choose this for the baby</li>
+        <li><strong>5-year-old:</strong> Bring a <strong>BubbleBum inflatable booster seat</strong> — folds flat, fits in a handbag, and is ideal for travel</li>
+        <li>Cost: SGD 15–45 per trip depending on distance</li>
+        <li>Best for: Mandai (Zoo, Bird Paradise), Dempsey Hill, Kampong Glam, Katong</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h4>🚕 MaxiCab — Large group + pram + luggage</h4>
+      <ul>
+        <li>7-seater MPV via the <strong>ComfortRide app</strong> — fits both families, all luggage and the pram in one vehicle</li>
+        <li>Child seat can be requested when booking by phone (+65 6552 1111) with 24 hours notice</li>
+        <li>Best for: <strong>Airport transfers both ways</strong> — remove all guesswork when you're tired and have a baby</li>
+        <li>Cost: metered + MaxiCab surcharge (~SGD 40–55 to/from Changi)</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h4>🏨 Conrad Concierge Transfer</h4>
+      <ul>
+        <li>Hotel can arrange private transfers with <strong>confirmed child seats</strong> — most seamless option</li>
+        <li>Book through the concierge on check-in for your departure transfer (6 Aug)</li>
+        <li>More expensive than Grab, but no uncertainty on child seat availability</li>
+        <li><strong>Strongly recommended for both airport transfers</strong> — arrival and departure</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h4>🚝 Sentosa Express (Monorail)</h4>
+      <ul>
+        <li>Connects HarbourFront MRT directly to Sentosa — no car seat needed</li>
+        <li>Pram-friendly, lifts throughout, free to board</li>
+        <li>Best for: Beach day, S.E.A. Aquarium</li>
+      </ul>
+    </div>
+    <div class="tcard">
+      <h4>✈️ Airport Transfer Timings</h4>
+      <ul>
+        <li><strong>Arrival (28 Jul):</strong> Changi → Conrad ~30–45 min. Pre-arrange with hotel concierge (child seat confirmed). ~SGD 40–55</li>
+        <li><strong>Departure (6 Aug):</strong> Leave hotel by <strong>12:45pm</strong> for 16:20 flight. Book transfer the evening before</li>
+        <li>Jewel Changi is within the airport — a final stop there before the gate requires no extra transport</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- PRACTICAL TIPS -->
+  <div class="abox abox-blue" style="margin-top:4px;">
+    <h3>🧳 Practical Tips</h3>
+    <ul class="tlist">
+      <li><strong>EZ-Link cards</strong> — buy at Changi Arrival Hall immediately on landing. Top up at any MRT station or 7-Eleven.</li>
+      <li><strong>Baby essentials</strong> — Cold Storage and FairPrice supermarkets stock all formula, nappies and wipes. Guardian and Watsons pharmacies for medicine and repellent.</li>
+      <li><strong>Nursing rooms</strong> — in every major mall, attraction and the Conrad hotel. Singapore is one of the most baby-friendly countries in the world.</li>
+      <li><strong>Book attractions in advance</strong> — July/August is peak Singapore school holidays. Online booking saves money and skips queues.</li>
+      <li><strong>Conrad Concierge</strong> — use them for restaurant reservations, attraction tickets and transfers. They are exceptional.</li>
+      <li><strong>National Day atmosphere</strong> — Singapore National Day is 9 August (just after you leave). Marina Bay will be beautifully decorated and festive throughout your stay.</li>
+      <li><strong>Tap water</strong> — completely safe to drink. Bring refillable bottles.</li>
+    </ul>
+  </div>
+
+  <!-- RESTAURANT GUIDE -->
+  <h2 class="stitle">🍽️ Restaurant Guide by Budget</h2>
+  <p style="font-family:sans-serif;font-size:.85rem;color:var(--gray);margin-bottom:12px;">Budget = under SGD 30pp · Mid-range = SGD 35–70pp · Splash = SGD 80pp+</p>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch;margin-bottom:32px;">
+  <table class="rtable">
+    <thead><tr><th>Restaurant</th><th>Cuisine</th><th>Band</th><th>Best For</th><th>Book</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Tim Ho Wan</strong> (Jewel, malls)</td><td>Dim Sum</td><td class="pb">Budget–Mid</td><td>Everyone, kids</td><td><a href="https://www.timhowan.com" target="_blank" rel="noopener" class="blink">Website →</a></td></tr>
+      <tr><td><strong>Sakunthala's</strong>, Little India</td><td>South Indian</td><td class="pb">Budget–Mid</td><td>Vegetarians</td><td>Walk-in</td></tr>
+      <tr><td><strong>Din Tai Fung</strong> (multiple malls)</td><td>Taiwanese</td><td class="pm">Mid</td><td>Everyone, kids</td><td>Walk-in (queue)</td></tr>
+      <tr><td><strong>The Clifford Pier</strong>, Fullerton Bay</td><td>Asian/International</td><td class="pm">Mid</td><td>Everyone</td><td><a href="https://www.fullertonhotels.com/fullerton-bay-hotel-singapore/dining/the-clifford-pier" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Pollen</strong>, Gardens by the Bay</td><td>Mediterranean</td><td class="pm">Mid</td><td>Vegetarians</td><td><a href="https://www.gardensbythebay.com.sg/en/eat-and-shop/pollen.html" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>PS.Cafe</strong>, Dempsey Hill</td><td>Modern Café</td><td class="pm">Mid</td><td>Vegetarians, families</td><td><a href="https://www.pscafe.com" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Jumbo Seafood</strong>, Clarke Quay</td><td>Chinese Seafood</td><td class="pm">Mid</td><td>Seafood/meat lovers</td><td><a href="https://www.jumboseafood.com.sg/en/reservation" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Whole Earth</strong></td><td>Vegetarian Peranakan</td><td class="pm">Mid</td><td>Vegetarians</td><td><a href="https://www.wholeearth.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Violet Oon</strong> (Clarke Quay)</td><td>Peranakan</td><td class="pm">Mid</td><td>Everyone</td><td><a href="https://www.violetoon.com" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Original Sin</strong>, Dempsey Hill</td><td>Vegetarian Mediterranean</td><td class="pm">Mid</td><td>Vegetarians, pescatarians</td><td><a href="https://www.originalsin.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>The Marmalade Pantry</strong></td><td>Modern Café</td><td class="pm">Mid</td><td>Families</td><td><a href="https://www.themarmaladepantry.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Bread Street Kitchen</strong> (MBS)</td><td>British/European</td><td class="pm">Mid</td><td>Everyone, families</td><td><a href="https://www.marinabaysands.com/restaurants/bread-street-kitchen.html" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Casa Verde</strong>, Botanic Gardens</td><td>Italian</td><td class="pm">Mid</td><td>Families, kids</td><td>Walk-in</td></tr>
+      <tr><td><strong>Yàn</strong>, National Gallery ✨</td><td>Cantonese Fine Dining</td><td class="ps">Splash</td><td>Everyone</td><td><a href="https://www.yan.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a></td></tr>
+      <tr><td><strong>Candlenut</strong>, Dempsey Hill ✨</td><td>Michelin Peranakan</td><td class="ps">Splash</td><td>Everyone</td><td><a href="https://www.candlenut.com.sg" target="_blank" rel="noopener" class="rlink">Reserve now →</a></td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <!-- HAWKER CENTRES -->
+  <h2 class="stitle">🍜 Singapore's Best Hawker Centres</h2>
+  <div class="abox abox-gold" style="margin-bottom:14px;">
+    <h3>💡 What is a hawker centre?</h3>
+    <p>Open-air or covered food halls where dozens of independent stalls sell freshly cooked Singapore street food for as little as SGD 3–8 a dish. Many stalls have been cooking the same recipe for 30–40 years. This is how most Singaporeans eat — and it's some of the best food in the world.</p>
+  </div>
+  <div class="tgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-bottom:28px;">
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--teal);">
+      <h4 style="color:var(--teal);font-size:.95rem;margin-bottom:4px;">🏆 Lau Pa Sat</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Raffles Quay · 5-min Grab from Conrad · Open 24 hrs</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">A stunning Victorian cast-iron building (1894) in the CBD. One of Singapore's most iconic hawker venues. At night, the street outside becomes <strong>Satay Street</strong> — row upon row of smoking charcoal satay skewers.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li>Satay (SGD 0.80/skewer) — must-order</li>
+        <li>Oyster omelette (char kway) — stall 28</li>
+        <li>Roti prata with curry</li>
+        <li>Teh tarik (pulled milk tea)</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--teal);margin-top:8px;font-weight:600;">Best for: Evening after Marina Bay walk — combine with the light show</p>
+    </div>
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--coral);">
+      <h4 style="color:var(--coral);font-size:.95rem;margin-bottom:4px;">🐔 Maxwell Food Centre</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Chinatown · 10-min Grab from Conrad · Daily 8am–10pm</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">Singapore's most famous hawker centre. Home to <strong>Tian Tian Hainanese Chicken Rice</strong> (stall 10) — the dish Gordon Ramsay queued for. Expect a 20-min wait but absolutely worth it.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li><strong>Tian Tian Chicken Rice</strong> — SGD 4–6 (stall 10)</li>
+        <li>Zhen Zhen Porridge — perfect for little ones</li>
+        <li>China Street Fritters — tofu, egg fritters</li>
+        <li>Maxwell Fuzhou Oyster Cake</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--coral);margin-top:8px;font-weight:600;">Best for: Lunch on Day 5 (Chinatown day) — it's right there</p>
+    </div>
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--green);">
+      <h4 style="color:var(--green);font-size:.95rem;margin-bottom:4px;">🌿 Satay by the Bay</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Gardens by the Bay · No extra travel needed · 5pm–12am (Fri/Sat later)</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">Outdoor hawker right inside Gardens by the Bay, with views of the Supertrees. Perfect open-air setting for an evening meal after the light show. Very family-friendly — pram access, open space for kids to run.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li>Satay — the best outdoor satay experience</li>
+        <li>BBQ seafood (stingray, tiger prawns)</li>
+        <li>Nasi lemak, char kway teow</li>
+        <li>Ice kacang (shaved ice dessert) — kids love it</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--green);margin-top:8px;font-weight:600;">Best for: Dinner on Day 2 (Gardens by the Bay day) — zero extra travel</p>
+    </div>
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--navy);">
+      <h4 style="color:var(--navy);font-size:.95rem;margin-bottom:4px;">🌊 Makansutra Gluttons Bay</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Esplanade Waterfront · 10-min walk from Conrad · Daily 6pm–late</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">A curated outdoor hawker at the Esplanade waterfront with <strong>stunning Marina Bay views</strong>. Only about 12 stalls but each one is an award-winner. One of the most scenic places to eat street food anywhere in Asia.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li>Oyster omelette — the signature dish here</li>
+        <li>BBQ sambal stingray</li>
+        <li>Char kway teow (stir-fried noodles)</li>
+        <li>Chilli crab bun (easier than full crab for little ones)</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--navy);margin-top:8px;font-weight:600;">Best for: Any evening — walking distance from Conrad, stunning sunset views</p>
+    </div>
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--purple);">
+      <h4 style="color:var(--purple);font-size:.95rem;margin-bottom:4px;">🏡 Tiong Bahru Market</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Tiong Bahru · 15-min Grab from Conrad · Daily 6am–8pm</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">A local neighbourhood institution in Singapore's oldest housing estate. Two floors — wet market below, hawker upstairs. Less touristy than Maxwell, more authentic. Great for a lazy morning brunch.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li><strong>Tiong Bahru Char Kway Teow</strong> — legendary queue, worth it</li>
+        <li>Chwee Kueh (steamed rice cakes with preserved radish)</li>
+        <li>Bao Today — freshly baked bao buns, kids adore them</li>
+        <li>Popiah fresh spring rolls</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--purple);margin-top:8px;font-weight:600;">Best for: Morning brunch on a free morning — pair with a stroll round the Art Deco neighbourhood</p>
+    </div>
+
+    <div class="tcard" style="background:#fff;border-radius:14px;padding:16px 18px;box-shadow:var(--shadow);border-top:4px solid var(--gold);">
+      <h4 style="color:var(--gold);font-size:.95rem;margin-bottom:4px;">✈️ Old Airport Road Food Centre</h4>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-bottom:8px;">Geylang area · 20-min Grab from Conrad · Daily 6am–midnight</p>
+      <p style="font-family:sans-serif;font-size:.82rem;margin-bottom:6px;">Built on Singapore's original 1930s airport site, this is regarded by many locals as the <strong>best hawker centre in Singapore</strong>. Enormous choice, long-established stalls, incredible quality. Worth the slightly longer Grab.</p>
+      <ul class="tlist" style="margin-top:6px;">
+        <li>Toa Payoh Lor 8 Roast Duck — crispy perfection</li>
+        <li>Hup Kee Fried Oyster Omelette</li>
+        <li>Wei Yi Laksa (stall 01-112) — rich coconut curry noodles</li>
+        <li>Ice Ball desserts — kids will be obsessed</li>
+      </ul>
+      <p style="font-family:sans-serif;font-size:.76rem;color:var(--gold);margin-top:8px;font-weight:600;">Best for: Dedicated hawker evening — a real local experience away from tourist spots</p>
+    </div>
+
+  </div>
+
+  <div class="abox abox-green" style="margin-bottom:28px;">
+    <h3>👶 Hawker Centre Tips with Kids &amp; a Pram</h3>
+    <ul class="tlist">
+      <li><strong>Pram access:</strong> All the above have step-free access. Lau Pa Sat, Satay by the Bay, and Makansutra are the most spacious.</li>
+      <li><strong>Order at the stall, then sit:</strong> One adult secures a table with a tissue packet or bag (this is how it's done), others queue at stalls. Tissue packet = table is taken — it's a local custom!</li>
+      <li><strong>Baby-friendly dishes:</strong> Plain congee/porridge (available at most centres) is ideal for a 4-month-old if you've started solids by then. Otherwise, feed baby before you go.</li>
+      <li><strong>Drinks:</strong> Always get <em>barley water</em> — cold, mild, kids love it. Or fresh coconut. Avoid tap water; stick to sealed bottles.</li>
+      <li><strong>Timing:</strong> Go at 11:30am or 5:30pm to beat the lunch/dinner rush. Midweek is quieter than weekends.</li>
+      <li><strong>Budget:</strong> A full meal for your group of 4 adults + 3 children is easily done for SGD 60–90 total (≈ £35–53) — extraordinary value.</li>
+    </ul>
+  </div>
+
+  <!-- BUDGET SUMMARY -->
+  <h2 class="stitle">💰 Estimated Budget (Group: 4 adults + 3 children + 1 baby)</h2>
+  <div style="overflow-x:auto;margin-bottom:20px;">
+  <table class="rtable">
+    <thead><tr><th>Day</th><th>Activity</th><th>Adult (SGD)</th><th>Child (SGD)</th><th>Group Total</th><th>~£</th></tr></thead>
+    <tbody>
+      <tr><td>Day 2</td><td>Gardens by the Bay — Cloud Forest + Flower Dome</td><td>~$53</td><td>~$36</td><td><strong>~$320</strong></td><td>~£188</td></tr>
+      <tr><td></td><td>ArtScience Museum</td><td>~$20</td><td>~$15</td><td><strong>~$125</strong></td><td>~£74</td></tr>
+      <tr><td>Day 3</td><td>Beach loungers + umbrella hire, Sentosa</td><td>—</td><td>—</td><td><strong>~$80</strong></td><td>~£47</td></tr>
+      <tr><td></td><td>S.E.A. Aquarium, Sentosa</td><td>~$42</td><td>~$32</td><td><strong>~$264</strong></td><td>~£155</td></tr>
+      <tr><td>Day 4</td><td>Singapore Zoo + River Wonders combo</td><td>~$85</td><td>~$60</td><td><strong>~$520</strong></td><td>~£306</td></tr>
+      <tr><td>Day 5</td><td>Chinatown + Little India (temples free)</td><td>Free</td><td>Free</td><td><strong>$0</strong></td><td>—</td></tr>
+      <tr><td>Day 6</td><td>Pool day — hotel facilities only</td><td>Free</td><td>Free</td><td><strong>$0</strong></td><td>—</td></tr>
+      <tr><td>Day 7</td><td>Bird Paradise, Mandai</td><td>~$48</td><td>~$33</td><td><strong>~$291</strong></td><td>~£171</td></tr>
+      <tr><td></td><td>Science Centre + Snow City</td><td>~$38</td><td>~$29</td><td><strong>~$239</strong></td><td>~£141</td></tr>
+      <tr><td>Day 8</td><td>Kampong Glam (free to explore)</td><td>Free</td><td>Free</td><td><strong>$0</strong></td><td>—</td></tr>
+      <tr><td></td><td>Botanic Gardens Orchid Garden (Jacob Ballas free)</td><td>~$15</td><td>Free</td><td><strong>~$60</strong></td><td>~£35</td></tr>
+      <tr><td>Day 9</td><td>Singapore Flyer</td><td>~$33</td><td>~$21</td><td><strong>~$195</strong></td><td>~£115</td></tr>
+      <tr><td>Depart</td><td>Jewel Canopy Park (optional, pre-flight)</td><td>~$30</td><td>~$20</td><td><strong>~$180</strong></td><td>~£106</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="card-grid">
+    <div class="icard" style="border-left-color:var(--green);"><div class="lbl">🎡 Activities total</div><div class="val" style="color:var(--green);">~SGD 2,094</div><div class="sub">≈ £1,232 for the whole group</div></div>
+    <div class="icard" style="border-left-color:var(--coral);"><div class="lbl">🚗 Transport</div><div class="val" style="color:var(--coral);">SGD 250–400</div><div class="sub">≈ £150–235</div></div>
+    <div class="icard" style="border-left-color:var(--gold);"><div class="lbl">🍽️ Dining (excl. breakfast)</div><div class="val" style="color:var(--gold);">SGD 2,000–3,200</div><div class="sub">≈ £1,175–1,880</div></div>
+    <div class="icard" style="border-left-color:var(--navy);"><div class="lbl">🛍️ Shopping &amp; incidentals</div><div class="val" style="color:var(--navy);">SGD 400–1,000+</div><div class="sub">≈ £235–590</div></div>
+  </div>
+
+  <div class="abox abox-gold" style="margin-top:16px;">
+    <h3>📊 Total Trip Spend Estimate (excl. flights &amp; hotel)</h3>
+    <ul class="tlist">
+      <li><strong>Mid-range</strong> (mix of mid and 1–2 splurge meals): ~<strong>SGD 5,000–6,500</strong> · ≈ £2,940–3,820 for the whole group</li>
+      <li><strong>Splash:</strong> ~<strong>SGD 7,000–9,000</strong> · ≈ £4,120–5,300</li>
+      <li>💡 Hotel breakfast + lounge saves roughly SGD 700–900 across the trip.</li>
+    </ul>
+  </div>
+
+  <!-- ADVANCE BOOKINGS -->
+  <h2 class="stitle">📌 Book These in Advance</h2>
+  <div class="abox" style="background:var(--red-light);border:1px solid #FFCDD2;">
+    <h3 style="color:var(--red);">⚠️ July/August is peak Singapore school holiday season — book early</h3>
+    <ul class="tlist">
+      <li><strong>Gardens by the Bay</strong> — Cloud Forest + Flower Dome: <a href="https://www.gardensbythebay.com.sg/en/plan-your-visit/visitor-information/tickets.html" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>ArtScience Museum:</strong> <a href="https://www.marinabaysands.com/museum.html" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>S.E.A. Aquarium, Sentosa:</strong> <a href="https://www.rwsentosa.com/en/attractions/sea-aquarium" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>Singapore Zoo + River Wonders combo:</strong> <a href="https://www.mandai.com/en/singapore-zoo.html" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>Bird Paradise:</strong> <a href="https://www.mandai.com/en/bird-paradise.html" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>Science Centre + Snow City:</strong> <a href="https://www.science.edu.sg/visit-us" target="_blank" rel="noopener" class="blink">Science Centre →</a> <a href="https://www.snowcity.com.sg" target="_blank" rel="noopener" class="blink">Snow City →</a></li>
+      <li><strong>Singapore Flyer:</strong> <a href="https://www.singaporeflyer.com" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>Jewel Canopy Park:</strong> <a href="https://www.jewelchangiairport.com/en/play/canopy-park.html" target="_blank" rel="noopener" class="blink">Book here →</a></li>
+      <li><strong>Candlenut restaurant</strong> — book several weeks ahead, fills fast: <a href="https://www.candlenut.com.sg" target="_blank" rel="noopener" class="rlink">Reserve now →</a></li>
+      <li><strong>Jumbo Seafood:</strong> <a href="https://www.jumboseafood.com.sg/en/reservation" target="_blank" rel="noopener" class="rlink">Reserve →</a></li>
+      <li><strong>Yàn, National Gallery:</strong> <a href="https://www.yan.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a></li>
+      <li><strong>Airport transfer (both ways)</strong> — arrange via Conrad concierge on check-in. Confirm child seat for return journey on 6 Aug.</li>
+    </ul>
+  </div>
+
+</div><!-- end overview panel -->
+
+
+<!-- ============================================================ -->
+<!-- DAY 1 — ARRIVAL -->
+<!-- ============================================================ -->
+<div id="day1" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#EAF0F8,#D6E4F7);">
+    <div class="ds-top">
+      <div class="ds-emoji">✈️</div>
+      <div>
+        <div class="ds-date">Monday 28 July · Arrival Day</div>
+        <div class="ds-title">Welcome to Singapore</div>
+      </div>
+    </div>
+    <div class="ds-desc">BA11 lands at ~17:30 SGT. Check in, decompress, use the lounge, and eat dinner at the hotel. No plans, no transport — you will be exhausted after a 13-hour overnight flight with young children. Everything else starts tomorrow.</div>
+    <div class="ds-chips">
+      <span class="dchip">🛬 Arrive ~17:30 SGT</span>
+      <span class="dchip">🏨 Conrad check-in</span>
+      <span class="dchip">🍽️ Hotel restaurant</span>
+      <span class="dchip">💰 ~$0 activities</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>✈️ Travel Day — Sunday 27 July</h3></div>
+    <div class="day-body">
+      <div class="arrbox">
+        <p>✈️ <strong>BA11</strong> departs London Heathrow at approximately <strong>21:30 BST</strong>.</p>
+        <p>🕐 Flight duration ~13 hours. Arrives Singapore Changi Airport approximately <strong>17:30 SGT on 28 July</strong>.</p>
+        <p>💡 Feed the baby during take-off and landing to ease ear pressure. British Airways provides bassinet (cot) positions for infants at bulkhead seats — confirm with BA if booked. The 5-year-old will likely sleep a good portion of the flight.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Monday 28 July — Arrival</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">~17:30 — Changi Airport</div>
+        <div class="tcontent">
+          <p class="aname">Clear immigration · collect bags · pick up EZ-Link cards</p>
+          <p class="adetail">Changi has excellent family facilities — changing rooms, buggies to borrow, and efficient immigration. Queue time typically 20–40 min. EZ-Link cards are sold at TransitLink machines in the Arrival Hall — buy one each for the adults. Under-7s ride free so no cards needed for the children.</p>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">~19:00 — Hotel</div>
+        <div class="tcontent">
+          <p class="aname">Arrive at Conrad Singapore Marina Bay</p>
+          <p class="adetail">Pre-arranged transfer (hotel concierge, child seat confirmed) takes ~30–45 min. Check in and head straight to the <strong>Executive Lounge</strong> — drinks, light bites and those first stunning views over Marina Bay. Let the children decompress. A lounge snack can hold everyone over while you get settled before dinner.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: Oscar's Restaurant — Conrad Singapore Marina Bay (ground floor)</strong><br/>
+          After a 13-hour flight with a 4-month-old and three children, going anywhere is unnecessary. Oscar's is the Conrad's all-day dining restaurant — an international buffet with live cooking stations covering meat, seafood, and vegetarian dishes. Simply take the lift down. Perfect for the children who can help themselves, and zero effort for the adults.
+          <a href="https://www.sevenrooms.com/reservations/oscars/hotel-website" target="_blank" rel="noopener" class="rlink">Reserve at Oscar's →</a>
+        </div>
+      </div>
+      <p style="margin-top:14px;font-family:sans-serif;font-size:.83rem;color:var(--gray);">⚠️ Aim for everyone in bed by 21:00–22:00 SGT. The baby's schedule will be disrupted regardless — the adults need as much sleep as possible to function well on Day 2. Do not be tempted to fight the jet lag by staying up.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 2 — GARDENS + ARTSCIENCE -->
+<!-- ============================================================ -->
+<div id="day2" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#E0F2F1,#B2DFDB);">
+    <div class="ds-top">
+      <div class="ds-emoji">🌿</div>
+      <div>
+        <div class="ds-date">Tuesday 29 July · Day 2</div>
+        <div class="ds-title">Gardens by the Bay &amp; ArtScience Museum</div>
+      </div>
+    </div>
+    <div class="ds-desc">A perfect gentle day — everything is a short walk from the hotel. Start outdoors in the cooler morning with water play and the Supertrees, then move into the stunning air-conditioned conservatories, and finish with interactive art in the afternoon.</div>
+    <div class="ds-chips">
+      <span class="dchip">🌺 Children's Garden</span>
+      <span class="dchip">🌿 Cloud Forest + Flower Dome</span>
+      <span class="dchip">🎨 ArtScience Museum</span>
+      <span class="dchip">🛒 Fully pram-friendly</span>
+      <span class="dchip">💰 ~SGD 445 group activities</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Gardens by the Bay (outdoor)</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">09:00</div>
+        <div class="tcontent">
+          <p class="aname">Children's Garden &amp; Supertree Grove <span class="badge b-free">Free outdoor</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">A 10-minute flat walk from the hotel. The <strong>Far East Organization Children's Garden</strong> is a dedicated play area with water jets, splash zones and climbing structures — pack swimwear for the children. Apply mosquito repellent on everyone before entering the gardens. The outdoor Supertree Grove is free; the OCBC Skyway walkway elevated above the trees has lifts and is pram-accessible.</p>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">11:00 — Move indoors as heat builds</div>
+        <div class="tcontent">
+          <p class="aname">Cloud Forest &amp; Flower Dome <span class="badge b-book">Book online</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Two air-conditioned conservatories connected by a short walk. The <strong>Cloud Forest</strong> features a 35-metre indoor waterfall — genuinely breathtaking for children and adults alike. The <strong>Flower Dome</strong> is the world's largest glass greenhouse. Both are fully lift-accessible and pram-friendly. Adult ~SGD 53, child ~SGD 36, infant free.</p>
+          <a href="https://www.gardensbythebay.com.sg/en/plan-your-visit/visitor-information/tickets.html" target="_blank" rel="noopener" class="blink">📌 Book tickets →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Pollen Restaurant, Gardens by the Bay</strong><br/>
+          Mid-range · <span class="pb2">SGD 35–55pp</span> · Inside the Flower Dome · Beautiful garden setting · Mediterranean menu with excellent vegetarian and seafood dishes
+          <a href="https://www.gardensbythebay.com.sg/en/eat-and-shop/pollen.html" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — ArtScience Museum</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">14:30</div>
+        <div class="tcontent">
+          <p class="aname">ArtScience Museum, Marina Bay Sands <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">A 10-minute flat walk from Gardens via the Dragonfly Lake path. The iconic lotus-shaped museum has deeply interactive exhibits — the permanent <em>Future World</em> exhibition fills entire rooms with floor-to-ceiling digital art that the children run between. The baby is captivated by the colour and movement. Fully lift-accessible throughout. Adult ~SGD 20, child ~SGD 15, infant free.</p>
+          <a href="https://www.marinabaysands.com/museum.html" target="_blank" rel="noopener" class="blink">📌 Book tickets →</a>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">18:30 — Evening stroll</div>
+        <div class="tcontent">
+          <p class="aname">Marina Bay Waterfront Promenade &amp; Merlion Park <span class="badge b-free">Free</span></p>
+          <p class="adetail">Completely flat, wide boardwalk — pram paradise. The Singapore skyline lights up beautifully at dusk. The Supertree light show is visible from the waterfront at 7:45pm and 8:45pm. Children can run freely. A lovely end to a gentle first full day.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: Bread Street Kitchen by Gordon Ramsay, Marina Bay Sands</strong><br/>
+          Mid-range · <span class="pb2">SGD 50–75pp</span> · 10-min walk from hotel · Relaxed brasserie, family-friendly atmosphere · Meat, seafood and vegetarian dishes all excellent
+          <a href="https://www.marinabaysands.com/restaurants/bread-street-kitchen.html" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 3 — SENTOSA BEACH -->
+<!-- ============================================================ -->
+<div id="day3" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#E1F5FE,#B3E5FC);">
+    <div class="ds-top">
+      <div class="ds-emoji">🏖️</div>
+      <div>
+        <div class="ds-date">Wednesday 30 July · Day 3</div>
+        <div class="ds-title">Sentosa — Beach Day &amp; S.E.A. Aquarium</div>
+      </div>
+    </div>
+    <div class="ds-desc">A beach morning on Palawan Beach followed by one of Asia's finest aquariums in the air-conditioned afternoon. Go early to beat the heat and the crowds. Sentosa's beaches aren't Caribbean standard, but they're clean, well-equipped and the children will have a brilliant time.</div>
+    <div class="ds-chips">
+      <span class="dchip">🏖️ Palawan Beach (morning)</span>
+      <span class="dchip">🐠 S.E.A. Aquarium (afternoon)</span>
+      <span class="dchip">🚝 Sentosa Express</span>
+      <span class="dchip">💰 ~SGD 344 group activities</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Getting There</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">08:30</div>
+        <div class="tcontent">
+          <p class="aname">MRT to HarbourFront, then Sentosa Express monorail</p>
+          <p class="adetail">Take the MRT from Promenade to HarbourFront (~20 min, no changes). Walk through VivoCity mall to the Sentosa Express on level 3 — all lifts, fully pram-accessible. The monorail takes you directly onto Sentosa. No car seat needed. Total door-to-door: ~35 min. Alternatively take a Grab directly (~20 min, ~SGD 20).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Palawan Beach</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">09:00–12:30</div>
+        <div class="tcontent">
+          <p class="aname">Palawan Beach <span class="badge b-beach">🏖️ Beach</span></p>
+          <p class="adetail">Hire sun loungers and a large umbrella on arrival (~SGD 8–12 each). <strong>Bring a pop-up UV beach tent for the baby</strong> — essential for keeping a 4-month-old in safe shade. Apply mosquito repellent to everyone; beach vegetation at the edges can have mosquitoes. The water is calm and shallow — perfect for the 5-year-old to paddle. The <strong>suspension bridge to Palawan Islet</strong> (the "southernmost point of continental Asia") takes about 20 minutes to walk and is a highlight for the older children. Build sandcastles, swim, relax.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Coastes or Café del Mar, Sentosa beachside</strong><br/>
+          Mid-range · <span class="pb2">SGD 30–50pp</span> · Beachside dining, no dress code · Burgers, pasta, grilled seafood, vegetarian options · Great for groups
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — S.E.A. Aquarium</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">14:30 — Head to Resorts World Sentosa</div>
+        <div class="tcontent">
+          <p class="aname">S.E.A. Aquarium <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Short walk or tram from the beach to Resorts World Sentosa. One of Asia's largest aquariums, with a spectacular 36-metre panoramic viewing panel on the Open Ocean habitat. Fully air-conditioned and a welcome escape from the afternoon heat. The baby will be mesmerised by the vast tanks. The older children love the touch pools and the shark walk-through tunnel. Adult ~SGD 42, child ~SGD 32, infant free.</p>
+          <a href="https://www.rwsentosa.com/en/attractions/sea-aquarium" target="_blank" rel="noopener" class="blink">📌 Book tickets →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: Din Tai Fung, VivoCity (HarbourFront)</strong><br/>
+          Mid-range · <span class="pb2">SGD 30–45pp</span> · Stop at VivoCity on the way back from Sentosa · World-famous Taiwanese dim sum — children love watching dumplings made in the open kitchen · Vegetarian xiao long bao available · No booking, expect a short queue
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 4 — ZOO + RIVER WONDERS -->
+<!-- ============================================================ -->
+<div id="day4" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#F1F8E9,#DCEDC8);">
+    <div class="ds-top">
+      <div class="ds-emoji">🦁</div>
+      <div>
+        <div class="ds-date">Thursday 31 July · Day 4</div>
+        <div class="ds-title">Mandai — Singapore Zoo &amp; River Wonders</div>
+      </div>
+    </div>
+    <div class="ds-desc">A big day out at one of the world's finest zoo complexes. Arrive early while the animals are active and the queues are short. The afternoon River Wonders features the beloved Giant Pandas and an Amazon boat ride.</div>
+    <div class="ds-chips">
+      <span class="dchip">🦒 Singapore Zoo (morning)</span>
+      <span class="dchip">🐼 River Wonders (afternoon)</span>
+      <span class="dchip">🚗 GrabFamily needed</span>
+      <span class="dchip">🦟 Mosquito repellent essential</span>
+      <span class="dchip">💰 ~SGD 520 group</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Getting There &amp; Morning — Singapore Zoo</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">08:00 — Depart</div>
+        <div class="tcontent">
+          <p class="aname">GrabFamily to Mandai Wildlife Reserve (~45 min)</p>
+          <p class="adetail">Book via the Grab app — select GrabFamily for the baby's fitted car seat. Bring the BubbleBum booster for the 5-year-old. ~SGD 30–40. Apply mosquito repellent on everyone before entering the park.</p>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">08:45–12:30</div>
+        <div class="tcontent">
+          <p class="aname">Singapore Zoo <span class="badge b-pram">🛒</span> <span class="badge b-book">Buy combo online</span></p>
+          <p class="adetail">One of the world's best zoos, with open-concept naturalistic enclosures — no bars, animals in beautiful habitats. Highlights: <strong>Rainforest Kidzworld</strong> water playground (bring swimwear for the older children), <strong>Fragile Forest</strong> biodome where free-flying butterflies land on you, the Orang-utan canopy walk, and the Elephants of Asia. A tram circuit runs the full perimeter — essential for pram navigation and tired legs. Buy the Zoo + River Wonders combo online to save money and skip the ticket queue. Adult ~SGD 85, child ~SGD 60, infant free.</p>
+          <a href="https://www.mandai.com/en/singapore-zoo.html" target="_blank" rel="noopener" class="blink">📌 Book Zoo + River Wonders combo →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Inwa Restaurant, Singapore Zoo</strong><br/>
+          Mid-range · <span class="pb2">SGD 20–35pp</span> · Sit-down inside the zoo · Asian and international menu · Good vegetarian options · Air-conditioned
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — River Wonders</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">14:00–17:00</div>
+        <div class="tcontent">
+          <p class="aname">River Wonders <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Asia's first river-themed wildlife park, connected to the zoo by a short walk. The <strong>Giant Panda Forest</strong> is the unmissable highlight — everyone loves Kai Kai and Le Le. The <strong>Amazon River Quest</strong> boat ride is exciting for the older children (min. height 106cm). Squirrel monkeys roam freely in one section — an extraordinary experience for the children. Fully pram-accessible with lifts throughout. Included in the combo ticket.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: PS.Cafe, Dempsey Hill</strong><br/>
+          Mid-range · <span class="pb2">SGD 40–60pp</span> · 20-min Grab from Mandai · Beautiful garden setting in the Dempsey Hill heritage area · Famous truffle fries · Excellent vegetarian menu · Book ahead for evenings
+          <a href="https://www.pscafe.com" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 5 — CULTURAL -->
+<!-- ============================================================ -->
+<div id="day5" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#FFF8E1,#FFE0B2);">
+    <div class="ds-top">
+      <div class="ds-emoji">🕌</div>
+      <div>
+        <div class="ds-date">Friday 1 August · Day 5</div>
+        <div class="ds-title">Cultural Singapore — Chinatown &amp; Little India</div>
+      </div>
+    </div>
+    <div class="ds-desc">Singapore's three great cultural quarters each feel like a different country. Today covers the Chinese and Indian sides — colourful temples, incredible architecture, street markets and the best South Indian food you'll find outside India. Almost entirely free to explore.</div>
+    <div class="ds-chips">
+      <span class="dchip">🏯 Chinatown temples (morning)</span>
+      <span class="dchip">🌺 Little India (afternoon)</span>
+      <span class="dchip">🚇 MRT throughout</span>
+      <span class="dchip">🛒 Fully pram-friendly</span>
+      <span class="dchip">💰 ~$0 activities</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Chinatown</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">09:00</div>
+        <div class="tcontent">
+          <p class="aname">Chinatown — temples &amp; streets <span class="badge b-free">Mostly free</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail"><strong>Buddha Tooth Relic Temple</strong> — free entry, a stunning four-storey Tang Dynasty-inspired pagoda with an excellent museum inside (the 9-year-old will be genuinely engaged). <strong>Sri Mariamman Temple</strong> — Singapore's oldest Hindu temple with a spectacular painted tower (free to enter). Walk <strong>Pagoda and Trengganu Streets</strong> for the market stalls — great for souvenirs and sensory overload in the best possible way. All streets in Chinatown are flat and pram-friendly.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Sakunthala's Restaurant, Little India</strong><br/>
+          Budget–Mid · <span class="pb2">SGD 15–25pp</span> · Proper sit-down South Indian restaurant · Famous banana leaf curries and thali · A vegetarian's paradise · Meat options available
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — Little India</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">13:30</div>
+        <div class="tcontent">
+          <p class="aname">Little India — temples &amp; Serangoon Road <span class="badge b-free">Free to explore</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail"><strong>Sri Veeramakaliamman Temple</strong> — free to visit, the colourful sculpted figures on the gopuram tower are extraordinary and children love looking for the different deities. Stroll <strong>Serangoon Road</strong> for the full Little India experience. Buy fresh <strong>sugarcane juice</strong> for the children (they will be obsessed). Browse Indian bakeries for <em>pineapple tarts</em>, <em>vadai</em> and freshly fried murukku. <strong>Mustafa Centre</strong> nearby is a 24-hour department store — great for any last-minute essentials or Singapore snacks to bring home.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: Jumbo Seafood, Clarke Quay</strong><br/>
+          Mid-range · <span class="pb2">SGD 50–75pp</span> · Singapore chilli crab — the definitive local dining experience for seafood lovers · Vegetarian sides also available · Riverside setting, flat walk from the MRT
+          <a href="https://www.jumboseafood.com.sg/en/reservation" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 6 — POOL/CHILL/SPA -->
+<!-- ============================================================ -->
+<div id="day6" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,var(--purple-light),#E1BEE7);">
+    <div class="ds-top">
+      <div class="ds-emoji">🏊</div>
+      <div>
+        <div class="ds-date">Saturday 2 August · Day 6</div>
+        <div class="ds-title">Pool, Spa &amp; Chill Day</div>
+      </div>
+    </div>
+    <div class="ds-desc">A proper rest day — and a chance for the wives to escape to the spa while the dads take charge of the pool. The Conrad's Saturday morning also has a free Flow Yoga class for in-house guests. Zero itinerary, maximum relaxation.</div>
+    <div class="ds-chips">
+      <span class="dchip">🧘 Free yoga 7:30am (Conrad)</span>
+      <span class="dchip">💆 Spa from 10am</span>
+      <span class="dchip">🏊 Pool all day</span>
+      <span class="dchip">☕ Lounge snacks</span>
+      <span class="dchip">💰 $0 base + spa optional</span>
+    </div>
+  </div>
+
+  <!-- POOL DAY RHYTHM -->
+  <div class="day-card">
+    <div class="day-card-head"><h3>🏊 The Day's Rhythm</h3></div>
+    <div class="day-body">
+      <div class="poolbox">
+        <p>🧘 <strong>7:30–8:30am — FREE Flow Yoga (Conrad rooftop / pool area)</strong><br/>
+        The Conrad runs a complimentary <strong>Flow Yoga</strong> class every Saturday morning for in-house guests. A gentle restorative session — perfect before a spa day. Ask the concierge or Fitness Centre team to reserve your spot on arrival.</p>
+        <p>😴 <strong>Late morning start for everyone else.</strong> No alarm. Leisurely breakfast at Oscar's — the children can help themselves from the buffet while the adults have a proper coffee. No rushing whatsoever.</p>
+        <p>🏊 <strong>Mid-morning onwards: pool.</strong> The 5, 7 and 9-year-olds will happily swim for hours. The baby has a gentle morning — bath, feeds, shade by the pool. The dads take charge of the pool while the wives head to the spa (see below).</p>
+        <p>😴 <strong>Afternoon: true rest.</strong> Nap for the baby. Lounge access for snacks and drinks throughout. The older children can watch a film or keep swimming. This is a trip, not a military operation.</p>
+        <p>🌅 <strong>Late afternoon optional:</strong> Short stroll to Merlion Park for the sunset over Marina Bay — 15 minutes, no transport, completely flat. One of the most beautiful free moments on the whole trip.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPA SECTION -->
+  <div class="day-card">
+    <div class="day-card-head"><h3>💆 Spa Day — For the Wives</h3></div>
+    <div class="day-body">
+      <p style="font-family:sans-serif;font-size:.86rem;color:#444;margin-bottom:16px;">Two excellent options — the Conrad's own spa (most convenient, no travel) or the award-winning Banyan Tree Spa at Marina Bay Sands (10-min walk, one of Singapore's finest).</p>
+
+      <div class="spa-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:4px;">
+
+        <!-- OPTION 1: Conrad Spa -->
+        <div style="background:#F3E5F5;border:1px solid #CE93D8;border-radius:12px;padding:16px 18px;">
+          <div style="font-family:sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--purple);margin-bottom:6px;">Option 1 — Most Convenient</div>
+          <div style="font-family:sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px;">Conrad Spa</div>
+          <div style="font-family:sans-serif;font-size:.83rem;color:#444;margin-bottom:10px;">
+            The hotel's own spa on the 4th floor — massages, facials and body treatments. Personalised to you. No travel required. The spa team can tailor the treatment to focus on specific areas — ideal after five days of carrying a 4-month-old.<br/><br/>
+            <strong>Hours:</strong> 10am – 8pm<br/>
+            <strong>Pricing:</strong> Not listed publicly — enquire with the concierge on check-in, or email the spa directly to book and confirm prices.<br/>
+            <strong>Email:</strong> <a href="mailto:sinci.fitness.club@conradhotels.com" style="color:var(--purple);">sinci.fitness.club@conradhotels.com</a>
+          </div>
+          <a href="https://www.hilton.com/en/hotels/sincici-conrad-singapore-marina-bay/amenities/" target="_blank" rel="noopener" class="rlink" style="background:var(--purple-light);color:var(--purple);border-color:#CE93D8;">View Spa &amp; Amenities →</a>
+        </div>
+
+        <!-- OPTION 2: Banyan Tree -->
+        <div style="background:#E8F5E9;border:1px solid #A5D6A7;border-radius:12px;padding:16px 18px;">
+          <div style="font-family:sans-serif;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--green);margin-bottom:6px;">Option 2 — Premium Alternative</div>
+          <div style="font-family:sans-serif;font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px;">Banyan Tree Spa, Marina Bay Sands</div>
+          <div style="font-family:sans-serif;font-size:.83rem;color:#444;margin-bottom:10px;">
+            One of Singapore's most celebrated luxury spas — award-winning and deeply tranquil. A 10-minute flat walk from the Conrad through the waterfront promenade. Specialist therapists, exceptional facilities, and a signature Asian wellness philosophy.<br/><br/>
+            <strong>Swedish Massage (60 min):</strong> ~SGD 220pp<br/>
+            <strong>Signature Banyan Tree Massage (90 min):</strong> ~SGD 310pp<br/>
+            <strong>Couples treatment rooms available</strong> — book a session together<br/>
+            <strong>Hours:</strong> 10am – 10pm
+          </div>
+          <a href="https://www.banyantreespa.com/location/banyan-tree-spa-marina-bay-sands" target="_blank" rel="noopener" class="blink">View Treatments &amp; Book →</a>
+        </div>
+
+      </div>
+      <p style="font-family:sans-serif;font-size:.78rem;color:var(--gray);margin-top:10px;">💡 Book spa appointments well in advance — both are popular on Saturdays. The Conrad concierge can arrange the Banyan Tree booking for you too.</p>
+    </div>
+  </div>
+
+  <div class="meal">
+    <div class="meal-ico">🍽️</div>
+    <div class="meal-body">
+      <strong>Dinner: Oscar's Restaurant — Conrad Singapore Marina Bay (stay in the hotel)</strong><br/>
+      Mid-range · <span class="pb2">SGD 50–80pp</span> · International buffet with live cooking stations · Freshly shucked oysters, seafood, meat and excellent vegetarian spread · Children love the dessert station · No transport needed — take the lift down
+      <a href="https://www.sevenrooms.com/reservations/oscars/hotel-website" target="_blank" rel="noopener" class="rlink">Reserve at Oscar's →</a>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 7 — BIRD PARADISE + SCIENCE CENTRE -->
+<!-- ============================================================ -->
+<div id="day7" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#E8F5E9,#C8E6C9);">
+    <div class="ds-top">
+      <div class="ds-emoji">🦜</div>
+      <div>
+        <div class="ds-date">Sunday 3 August · Day 7</div>
+        <div class="ds-title">Bird Paradise &amp; Science Centre</div>
+      </div>
+    </div>
+    <div class="ds-desc">A morning of extraordinary free-flight aviaries at the world-class Bird Paradise, followed by an afternoon of interactive science — and the option of a genuine indoor snow experience for the children at Snow City.</div>
+    <div class="ds-chips">
+      <span class="dchip">🦜 Bird Paradise, Mandai (morning)</span>
+      <span class="dchip">🔬 Science Centre (afternoon)</span>
+      <span class="dchip">❄️ Snow City (optional add-on)</span>
+      <span class="dchip">🚗 GrabFamily needed</span>
+      <span class="dchip">💰 ~SGD 530 group</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Bird Paradise, Mandai</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">08:30 — Depart</div>
+        <div class="tcontent">
+          <p class="aname">GrabFamily to Bird Paradise, Mandai (~45 min)</p>
+          <p class="adetail">Apply mosquito repellent on everyone before entering the park. Book tickets online in advance.</p>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">09:00–12:30</div>
+        <div class="tcontent">
+          <p class="aname">Bird Paradise <span class="badge b-pram">🛒</span> <span class="badge b-book">Book online</span></p>
+          <p class="adetail">Relocated (2023) and now among the world's finest bird parks. Eight enormous free-flight aviaries where birds soar directly above you. <strong>Lory Loft</strong> — hand-feeding brightly coloured lories — will almost certainly be the highlight of the whole trip for all four children. <strong>Pelican Cove</strong> and <strong>Wings of Asia</strong> are spectacular. Flamingo Lake is stunning for photos. Abundant shade, cooling mist fans along paths, lifts everywhere. Adult ~SGD 48, child ~SGD 33, infant free.</p>
+          <a href="https://www.mandai.com/en/bird-paradise.html" target="_blank" rel="noopener" class="blink">📌 Book tickets →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Nest by Mandai, Bird Paradise</strong><br/>
+          Mid-range · <span class="pb2">SGD 20–35pp</span> · Sit-down restaurant inside the park · Mix of Asian and Western food · Air-conditioned
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — Science Centre + Snow City</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">14:30</div>
+        <div class="tcontent">
+          <p class="aname">Science Centre Singapore <span class="badge b-pram">🛒</span> + Snow City <span class="badge b-book">Book timed slots</span></p>
+          <p class="adetail">A 20-min Grab from Mandai to Jurong. Over 1,000 interactive science and technology exhibits — the 7 and 9-year-olds will love it. The outdoor Ecogarden is fun and shaded. Add <strong>Snow City</strong> next door for a memorable indoor snow experience (−5°C, 30 minutes) — an extraordinary novelty that children never forget. Thermal suits provided. Book Snow City timed slots in advance as they sell out. Science Centre adult ~SGD 18, child ~SGD 13. Snow City adds ~SGD 20 adult / SGD 16 child.</p>
+          <a href="https://www.science.edu.sg/visit-us" target="_blank" rel="noopener" class="blink">📌 Science Centre →</a>
+          <a href="https://www.snowcity.com.sg" target="_blank" rel="noopener" class="blink">📌 Snow City →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: The Marmalade Pantry, Ion Orchard</strong><br/>
+          Mid-range · <span class="pb2">SGD 40–60pp</span> · Beautiful brunch-style evening menu · Strong vegetarian offering · Light and fresh after a full day
+          <a href="https://www.themarmaladepantry.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 8 — MARINA BARRAGE + BOTANIC GARDENS -->
+<!-- ============================================================ -->
+<div id="day8" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#E3F2FD,#BBDEFB);">
+    <div class="ds-top">
+      <div class="ds-emoji">🪁</div>
+      <div>
+        <div class="ds-date">Monday 4 August · Day 8</div>
+        <div class="ds-title">Marina Barrage &amp; Singapore Botanic Gardens</div>
+      </div>
+    </div>
+    <div class="ds-desc">A hidden gem morning at the Marina Barrage — one of the best-kept family secrets in Singapore — with rooftop kite-flying and sweeping city skyline views, followed by the wonderful free children's garden in the Botanic Gardens in the afternoon.</div>
+    <div class="ds-chips">
+      <span class="dchip">🪁 Marina Barrage (morning)</span>
+      <span class="dchip">🌺 Botanic Gardens (afternoon)</span>
+      <span class="dchip">🚗 Short Grab each way</span>
+      <span class="dchip">🛒 Pram-friendly</span>
+      <span class="dchip">💰 ~SGD 60 group (mostly free)</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Marina Barrage</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">09:00</div>
+        <div class="tcontent">
+          <p class="aname">Marina Barrage — Rooftop Garden &amp; Kite Flying <span class="badge b-free">Free</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">One of Singapore's most underrated family spots, and very few tourists know about it. A 10-min Grab from the Conrad (~SGD 12). The Marina Barrage is a dam that created the Marina Reservoir — but the real draw is the <strong>stunning green rooftop garden</strong> with panoramic 360° views of the entire Marina Bay skyline (the same skyline you've been looking at from the hotel, but from a completely different angle at water level). Locals bring kites to fly up here — <strong>pick up an inexpensive kite from any Daiso or sports shop beforehand</strong> (SGD 2–5) and the older children will have a brilliant time. The rooftop is entirely flat, wide and pram-perfect. The Visitor Centre at ground level (open daily, 9am–5pm) explains Singapore's water story through interactive exhibits — the 7 and 9-year-olds find it genuinely interesting. There is also a small café on-site. Apply mosquito repellent before going outdoors.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Casa Verde, Singapore Botanic Gardens</strong><br/>
+          Mid-range · <span class="pb2">SGD 25–40pp</span> · Head straight from Marina Barrage to the Botanic Gardens (15-min Grab) · Italian-inspired menu · Great pizza and pasta for the children · Outdoor garden setting under the trees · Good vegetarian options
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon — Singapore Botanic Gardens</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">14:00</div>
+        <div class="tcontent">
+          <p class="aname">Jacob Ballas Children's Garden <span class="badge b-free">Free</span> <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Take a Grab to Singapore Botanic Gardens (~20 min from Kampong Glam). The <strong>Jacob Ballas Children's Garden</strong> is a dedicated section within the UNESCO World Heritage Botanic Gardens — entirely free, shaded, and designed specifically for children up to 12. Water play jets, a treehouse, a suspension bridge and themed garden zones. All four children in your group will love it. Apply mosquito repellent before entering.</p>
+        </div>
+      </div>
+      <div class="tblock">
+        <div class="tlabel">16:00 — Optional add-on</div>
+        <div class="tcontent">
+          <p class="aname">National Orchid Garden <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Within the same Botanic Gardens grounds — a small entry fee gives access to over 1,000 orchid species including Singapore's national flower. Adult ~SGD 15, children free. Beautiful and worth 45 minutes if the children still have energy. Otherwise, the garden grounds themselves are free and lovely for a late afternoon stroll.</p>
+          <a href="https://www.nparks.gov.sg/sbg/things-to-do-and-see/gardens-and-parks/national-orchid-garden" target="_blank" rel="noopener" class="blink">📌 Orchid Garden info →</a>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Dinner: Candlenut, Dempsey Hill ✨ Splurge night</strong><br/>
+          Upscale · <span class="pb2">SGD 90–130pp</span> · World's first Michelin-starred Peranakan restaurant · Extraordinary, unique food unlike anything available in the UK · Full vegetarian tasting menu available · Book several weeks ahead
+          <a href="https://www.candlenut.com.sg" target="_blank" rel="noopener" class="rlink">Reserve now →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DAY 9 — LAST FULL DAY -->
+<!-- ============================================================ -->
+<div id="day9" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#E8EAF6,#C5CAE9);">
+    <div class="ds-top">
+      <div class="ds-emoji">🎡</div>
+      <div>
+        <div class="ds-date">Tuesday 5 August · Day 9 — Last Full Day</div>
+        <div class="ds-title">Singapore Flyer, Orchard Road &amp; Farewell Dinner</div>
+      </div>
+    </div>
+    <div class="ds-desc">A gentle final full day — a breathtaking 360° view of everything you've seen from the world's second-largest observation wheel, a last shop on Orchard Road, and a special farewell dinner in a stunning setting.</div>
+    <div class="ds-chips">
+      <span class="dchip">🎡 Singapore Flyer (morning)</span>
+      <span class="dchip">🛍️ Orchard Road (midday)</span>
+      <span class="dchip">🏊 Hotel pool (afternoon)</span>
+      <span class="dchip">🍽️ Farewell dinner</span>
+      <span class="dchip">💰 ~SGD 195 group activities</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Morning — Singapore Flyer</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">09:30</div>
+        <div class="tcontent">
+          <p class="aname">Singapore Flyer <span class="badge b-pram">🛒</span> <span class="badge b-book">Book online</span></p>
+          <p class="adetail">A short walk from the hotel along the Marina Bay waterfront. Each capsule of the world's second-largest observation wheel is fully enclosed, spacious and air-conditioned — completely comfortable with a pram and a baby. One full rotation takes 30 minutes. On a clear morning you can see as far as Malaysia. A brilliant final perspective, with the entire city laid out below — Gardens by the Bay, Sentosa in the distance, the zoo skyline to the north. Adult ~SGD 33, child ~SGD 21, infant free.</p>
+          <a href="https://www.singaporeflyer.com" target="_blank" rel="noopener" class="blink">📌 Book tickets →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Midday — Orchard Road</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">11:30</div>
+        <div class="tcontent">
+          <p class="aname">Orchard Road — Last shops &amp; souvenirs <span class="badge b-pram">🛒</span></p>
+          <p class="adetail">Take the MRT to Orchard (~15 min). Singapore's famous shopping boulevard — every mall is air-conditioned and pram-friendly. <strong>Ion Orchard</strong> for international brands and an excellent basement food market. <strong>Ngee Ann City / Takashimaya</strong> for the best Singapore souvenir selection — local snacks to bring home (bak kwa, pineapple tarts, kaya jam), and an excellent children's section. Pick up any last gifts.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Lunch: Original Sin, Dempsey Hill</strong><br/>
+          Mid-range · <span class="pb2">SGD 35–55pp</span> · Singapore's finest fully vegetarian restaurant · Mediterranean menu, also excellent for pescatarians · Beautiful Dempsey Hill setting
+          <a href="https://www.originalsin.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-card-head"><h3>Afternoon &amp; Evening</h3></div>
+    <div class="day-body">
+      <div class="tblock">
+        <div class="tlabel">15:00</div>
+        <div class="tcontent">
+          <p class="aname">Conrad pool — one last time</p>
+          <p class="adetail">Return to the hotel for a final afternoon swim. <strong>Pack bags this afternoon</strong> — do not leave packing until departure morning when you'll be managing a baby, a 5-year-old and a 4:20pm flight. Ask the concierge to arrange your departure transfer for tomorrow morning tonight.</p>
+        </div>
+      </div>
+      <div class="meal">
+        <div class="meal-ico">🍽️</div>
+        <div class="meal-body">
+          <strong>Farewell Dinner: Yàn, National Gallery Singapore ✨</strong><br/>
+          Upscale · <span class="pb2">SGD 70–100pp</span> · 5-min walk from the hotel · Cantonese fine dining in Singapore's breathtaking colonial National Gallery building · Views over the Padang and City Hall · Vegetarian dim sum and mains available · A genuinely memorable last evening
+          <a href="https://www.yan.com.sg" target="_blank" rel="noopener" class="rlink">Reserve →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ============================================================ -->
+<!-- DEPARTURE -->
+<!-- ============================================================ -->
+<div id="depart" class="tab-panel">
+  <div class="day-summary" style="background:linear-gradient(135deg,#EAF0F8,#D6E4F7);">
+    <div class="ds-top">
+      <div class="ds-emoji">✈️</div>
+      <div>
+        <div class="ds-date">Wednesday 6 August · Departure</div>
+        <div class="ds-title">BA12 SIN → LHR · Departs 16:20 SGT</div>
+      </div>
+    </div>
+    <div class="ds-desc">A morning in the hotel, one last Jewel Changi stop at the airport, then home. Leave the hotel by 12:45pm — check in closes approximately 2 hours before departure.</div>
+    <div class="ds-chips">
+      <span class="dchip">🍳 Final hotel breakfast</span>
+      <span class="dchip">🏨 Check out by 12:00</span>
+      <span class="dchip">🚕 Leave hotel by 12:45pm</span>
+      <span class="dchip">✨ Jewel Changi pre-flight</span>
+      <span class="dchip">✈️ BA12 departs 16:20</span>
+    </div>
+  </div>
+
+  <div class="day-card">
+    <div class="day-body">
+      <div class="depbox">
+        <p>🍳 <strong>Final breakfast</strong> at the Conrad — make it a good one. Check-out is typically 12:00 noon. Ask the concierge on your last evening whether a late check-out to 13:00 is possible (Executive floor guests often get this).</p>
+        <p>🚕 <strong>Leave the hotel by 12:45pm at the very latest.</strong> Your airport transfer should already be booked from last night (via the hotel concierge — child seat confirmed). The drive to Changi is 30–45 minutes.</p>
+        <p>✨ <strong>One last Jewel Changi stop</strong> — Jewel is directly connected to the terminal building, so once you've dropped your bags and cleared security you can visit with no extra transport needed. The <strong>Rain Vortex</strong> indoor waterfall and <strong>Forest Valley</strong> are free. The <strong>Canopy Park</strong> on the top floor is a brilliant final burst of energy for the children before a long flight — bouncing nets, hedge mazes and the walking nets are genuinely fun. Book Canopy Park tickets in advance if possible.</p>
+        <a href="https://www.jewelchangiairport.com/en/play/canopy-park.html" target="_blank" rel="noopener" class="blink">📌 Jewel Canopy Park →</a>
+        <p style="margin-top:10px;">✈️ <strong>BA12</strong> departs Singapore Changi at <strong>16:20 SGT</strong>. Arrives London Heathrow approximately <strong>21:30 BST on 7 August</strong> (~13 hour flight).</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  Singapore Family Holiday · July–August 2026 🇸🇬 &nbsp;·&nbsp; Conrad Singapore Marina Bay &nbsp;·&nbsp; BA11 out · BA12 home (16:20, 6 Aug)
+</footer>
+
+<script>
+  function switchTab(btn) {
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+    window.scrollTo(0, 0);
+  }
+</script>
+</body>
+</html>
